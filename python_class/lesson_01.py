@@ -1,3 +1,5 @@
+import time
+
 def login_page(username, password, driver):  # 形参  参数化，提高代码复用率
     driver.find_element_by_id('username').send_keys(username)
     driver.find_element_by_id('password').send_keys(password)
@@ -20,5 +22,4 @@ def search_key(url, driver, username, password, searchNumber):
     #     print('订单搜索结果是正确的！')
     # else:
     #     print('订单搜索结果错误！')
-
 
